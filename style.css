@@ -1,0 +1,248 @@
+/* Enhanced CSS with Color Themes and Responsiveness */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.sooble {
+  position: relative;
+  left: 100px;
+  height: 40px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#top-logo-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  padding: 15px 0;
+  text-align: left;
+  z-index: 1000;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 120px auto 0;
+}
+
+.site-title {
+  font-size: 4em;
+  margin: 30px 0 10px;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.subtagline {
+  font-size: 1.6em;
+  margin: 30px 0 0;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.philosophy-section,
+.offer-section,
+.clients-section,
+.schedule-section {
+  background-color: #fff;
+  padding: 100px 0;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 60px 0;
+}
+
+.offer-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-item {
+  margin: 0 0 40px;
+}
+
+.offer-item h3 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.offer-item p,
+.offer-text,
+.philosophy-text,
+.schedule-text {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.offer-item ul,
+.offer-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: x-large;
+}
+
+.clients-section .testimonial-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-item {
+  margin: 0 0 40px;
+}
+
+.testimonial-item blockquote {
+  padding: 40px;
+  background-color: #fff;
+  border-left: 5px solid #000;
+  border-radius: 20px;
+}
+
+.testimonial-item p {
+  margin: 0;
+  color: #000;
+}
+
+.testimonial-item cite {
+  font-style: normal;
+  color: #000;
+}
+
+.schedule-section p {
+  font-size: 2em;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(to right, #fff, #eee); /* Gradient white */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #eee, #ddd); /* Gradient white with hover animation */
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    margin: 60px auto 0;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .tagline {
+    font-size: 1.5em;
+  }
+
+  .subtagline {
+    font-size: 1.2em;
+  }
+
+  .section-title {
+    font-size: 2.5em;
+  }
+
+  .philosophy-section,
+  .offer-section,
+  .clients-section,
+  .schedule-section {
+    padding: 60px 0;
+  }
+
+  .offer-item h3,
+  .testimonial-item blockquote {
+    font-size: 2em;
+  }
+
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+  }
+}
+/* Additional CSS for Improved Responsiveness */
+
+@media screen and (max-width: 480px) {
+  .testimonial-item blockquote {
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-grid {
+      flex-direction: column;
+  }
+}
+
+/* Additional CSS for Improved Responsiveness and Testimonial Quotes */
+
+.testimonial-quote {
+  padding: 20px;
+  background-color: #fff;
+  border-left: 5px solid #000;
+  border-radius: 20px;
+  margin: 0 20px 40px;
+}
+
+.testimonial-item {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .testimonial-quote {
+      padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonial-quote {
+      margin: 0 10px 20px;
+  }
+}
