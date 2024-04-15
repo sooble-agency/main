@@ -1,0 +1,271 @@
+/* Enhanced CSS with Color Themes and Animations */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+}
+
+.sooble {
+  position: relative;
+  left: 100px;
+  height: 40px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#top-logo-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  padding: 15px 0;
+  text-align: left;
+  z-index: 1000;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 120px auto 0;
+}
+
+.site-title {
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: #fff;
+  animation: fadeInUp 1s ease;
+}
+
+.tagline {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #fff;
+  animation: fadeInUp 1.2s ease;
+}
+
+.subtagline {
+  font-size: 1.2em;
+  margin: 20px 0 0;
+  color: #fff;
+  animation: fadeInUp 1.4s ease;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.philosophy-section,
+.offer-section,
+.clients-section,
+.schedule-section {
+  background-color: #fff;
+  padding: 60px 0;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.offer-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-item {
+  margin: 0 0 30px;
+}
+
+.offer-item h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #000;
+  animation: slideInLeft 1s ease;
+}
+
+.offer-item p,
+.offer-text,
+.philosophy-text,
+.schedule-text {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #000;
+  animation: fadeInUp 1s ease;
+}
+
+.offer-item ul,
+.offer-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.clients-section .testimonial-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-item {
+  margin: 0 0 20px;
+}
+
+.testimonial-item blockquote {
+  padding: 20px;
+  background-color: #fff;
+  border-left: 5px solid #000;
+  border-radius: 20px;
+  animation: slideInRight 1s ease;
+}
+
+.testimonial-item p {
+  margin: 0;
+  color: #000;
+}
+
+.testimonial-item cite {
+  font-style: normal;
+  color: #000;
+}
+
+.schedule-section p {
+  font-size: 1.2em;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(to right, #fff, #eee);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  animation: bounceIn 1s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #eee, #ddd);
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    margin: 60px auto 0;
+  }
+
+  .site-title {
+    font-size: 2em;
+  }
+
+  .tagline {
+    font-size: 1.2em;
+  }
+
+  .subtagline {
+    font-size: 1em;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .philosophy-section,
+  .offer-section,
+  .clients-section,
+  .schedule-section {
+    padding: 40px 0;
+  }
+
+  .offer-item h3,
+  .testimonial-item blockquote {
+    font-size: 1.8em;
+  }
+
+  .testimonial-item blockquote {
+    padding: 15px;
+  }
+
+  .testimonial-item p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+  }
+}
+
+/* Animation Keyframes */
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
